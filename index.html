@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web format</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class='header'>
+
+        <h1>WEB FORMAT</h1>
+        <small>Don't save your files for a while and recomend use chrome in this site</small>
+
+    </header>
+
+    <main>
+        <section>
+
+            <div class='textOptions'>
+                
+                <input type="number" name="fontSize" id="fontSize" value="16" onchange="fontModifie()">
+
+            </div>
+
+            <div class='options'>
+
+                <button onclick="optionsClick('center')" >
+                    <img src="./svg/center.svg" alt="center">
+                </button>
+
+                <button onclick="optionsClick('left')" >
+                    <img src="./svg/left.svg" alt="left">
+                </button>
+
+                <!--Buttons need execCommand on js-->
+                <button data-command="bold" class="commands">
+                    <img src="./svg/bold.svg" alt="bold">
+                    <i class=' fas fa-bold'></i>
+                </button>
+
+                <button data-command="italic" class="commands">
+                    <img src="./svg/italic.svg" alt="italic">
+                    <i class=' fas fa-italic'></i>
+                </button>
+
+                <button data-command="underline" class="commands">
+                    <img src="./svg/underline.svg" alt="underline">
+                    <i class=' fas fa-underline'></i>
+                </button>
+
+                <button type="button" onclick="list('ordered')">
+                    <img src="./svg/list1.svg" alt="list">
+                    <i class=' fas fa-list-ol'></i>
+                </button>
+
+                <button type="button" onclick="list('unordered')">
+                    <img src="./svg/list2.svg" alt="list2">
+                    <i class=' fas fa-list-ul'></i>
+                </button>
+
+                <!--Button need modal-->
+                <button onclick="optionsClick('link')" >
+                    <img src="./svg/link.svg" alt="link">
+                </button>
+
+            </div>
+
+            <div class='editorBox'>
+                <div contenteditable="true" class='editor' id="editor">
+                    <!--Here have your text-->
+                </div>
+            </div>
+
+        </section>
+
+        <div class="buttons">
+            <button onclick="buttons('clear')" >CLEAR</button>
+            <button onclick="buttons('save')" disabled="disabled">SAVE</button>
+        </div>
+
+        <aside class="aside" id="mainAside">
+            <span>
+                <!--Triangle-->
+            </span>
+
+            <section>
+                <div>
+                    <h1>Insert link</h1>
+
+                    <label for="link" id="labelLink">Link: </label> <br/>
+                    <input type="url" name="link" id="link"/>
+
+                    <br/>
+
+                    <label for="text" id="labelText">Text: </label> <br/>
+                    <input type="text" name="text" id="text"/>
+
+                    <br/>
+
+                    <button type="button" id="btn" onclick='addLink()'>Add</button>
+
+                </div>
+            </section>
+        </aside>
+
+    </main> 
+
+    <footer class='footer'>
+        <small>Made with ❤️ by <a href="https://github.com/mr-soulfox" target="_blank">Marcos Paulo</a> in 2021</small>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/addLink.js"></script>
+    <script src="./js/list.js"></script>
+    <script src="./js/font.js"></script>
+    
+</body>
+</html>

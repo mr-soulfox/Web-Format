@@ -1,0 +1,21 @@
+$background: #282a36;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+body {
+    background-color: $background
+}
+
+/*Imports down*/
+@import 'modules/header';
+@import 'modules/editor';
+@import 'modules/textOptions';
+@import 'modules/options';
+@import 'modules/mainAside';
+@import 'modules/buttons';
+@import 'modules/footer';

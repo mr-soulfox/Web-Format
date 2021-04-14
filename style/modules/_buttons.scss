@@ -1,0 +1,36 @@
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.buttons button {
+    margin: 3px;
+    font-weight: 500;
+    font-size: 1.1rem;
+
+    &:first-child {
+        padding: 6px;
+        border-radius: 5px;
+        color: white;
+        background-color: rgba(228, 54, 54, 0.96);
+        border: none;
+    }
+
+    &:first-child:hover {
+        background-color: lighten($color: rgba(228, 54, 54, 0.96), $amount: 5%)
+    }
+
+    &:first-child:focus {
+        outline: none;
+        background-color: darken($color: rgba(228, 54, 54, 0.96), $amount: 10%)
+    }
+
+    /*button two*/
+    &:last-child {
+        padding: 6px;
+        border-radius: 5px;
+        color: white;
+        border: none;
+    }
+}
