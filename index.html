@@ -73,6 +73,10 @@
                     <img src="./svg/link.svg" alt="link">
                 </button>
 
+                <button onclick="optionsClick('img')" >
+                    <img src="./svg/img.svg" alt="img">
+                </button>
+
             </div>
 
             <div class='editorBox'>
@@ -88,17 +92,18 @@
             <button onclick="save('editor')">SAVE</button>
         </div>
 
-        <aside class="aside" id="mainAside">
-            <span>
+        <aside class="aside">
+            <span id="triangle">
                 <!--Triangle-->
             </span>
 
             <section>
-                <div>
+
+                <div id="mainAside">
                     <h1>Insert link</h1>
 
                     <label for="link" id="labelLink">Link: </label> <br/>
-                    <input type="url" name="link" id="link"/>
+                    <input type="url" name="link" id="link" placeholder="https://">
 
                     <br/>
 
@@ -110,6 +115,17 @@
                     <button type="button" id="btn" onclick='addLink()'>Add</button>
 
                 </div>
+
+                <div id="image">
+                    <h1>Insert link to image</h1>
+
+                    <label for="url" id="labelFile">File: </label> <br/>
+                    <input type="file" name="url" id="fileImage" accept="image/png, image/jpeg, image/png">
+
+                    <button type="button" id="btn" onclick='addImage()'>Add</button>
+
+                </div>
+
             </section>
         </aside>
 
@@ -121,6 +137,7 @@
 
     <script src="./js/main.js"></script>
     <script src="./js/addLink.js"></script>
+    <script src="./js/addImage.js"></script>
     <script src="./js/list.js"></script>
     <script src="./js/font.js"></script>
     <script src="./js/save.js"></script>

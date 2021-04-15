@@ -1,5 +1,6 @@
 const editor = document.getElementById('editor')
 let selected = undefined
+const triangle = document.getElementById('triangle')
 
 //added events in all buttons for modifie text decoration
 const buttonsOptions = document.getElementsByClassName('commands')
@@ -30,20 +31,46 @@ function optionsClick(option) {
         if (mainAside.style.visibility == 'visible') {
 
             mainAside.style.visibility = 'hidden'
+            triangle.style.visibility = 'hidden'
 
         } else {
 
             mainAside.style.visibility = 'visible'
+            triangle.style.visibility = 'visible'
+            triangle.style.top = '479.3px'
 
         }
 
-        mainAside.addEventListener('dblclick', () => {
+        //hide modals open
+        const imageAside = document.getElementById('image')
 
-            mainAside.style.visibility = 'hidden'
+        imageAside.style.visibility = 'hidden'
 
-        })
+    } else if (option == 'img') {
 
-    }
+        //show/hide modal for add image
+        const imageAside = document.getElementById('image')
+
+        if (imageAside.style.visibility == 'visible') {
+
+            imageAside.style.visibility = 'hidden'
+            triangle.style.visibility = 'hidden'
+
+        } else {
+
+            imageAside.style.visibility = 'visible'
+            imageAside.style.height = '150px'
+            triangle.style.visibility = 'visible'
+            triangle.style.top = '524px'
+
+        }
+
+        //hide modal opens
+        const mainAside = document.getElementById('mainAside')
+
+        mainAside.style.visibility = 'hidden'
+
+    }   
 
 }
 
