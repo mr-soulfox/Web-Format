@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   font-family: 'Roboto';
+  font-display: optional;
 }
 
 body {
@@ -303,17 +304,17 @@ body {
   padding: 6px;
   border-radius: 5px;
   color: white;
-  background-color: #17c517;
+  background-color: #1d9d1d;
   border: none;
 }
 
 .buttons button:last-child:hover {
-  background-color: #1adc1a;
+  background-color: #21b321;
 }
 
 .buttons button:last-child:focus {
   outline: none;
-  background-color: #129712;
+  background-color: #157215;
 }
 
 .footer {
