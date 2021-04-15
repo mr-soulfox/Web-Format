@@ -17,4 +17,8 @@
     font-weight: 700;
     color: #f2f2f2;
     text-decoration: none;
+
+    &:hover {
+        color: darken($color: #f2f2f2, $amount: 10);
+    }
 }

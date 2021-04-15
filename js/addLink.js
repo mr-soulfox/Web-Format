@@ -2,9 +2,9 @@ const link = document.getElementById('link')
 const text = document.getElementById('text')
 const labelLink = document.getElementById('labelLink')
 const labelText = document.getElementById('labelText')
-let error = 0
 
 function addLink() {
+    let error = 0
 
     const editor = document.getElementById('editor')
 
@@ -16,18 +16,10 @@ function addLink() {
 
         error++
 
-    } else if (link.toString().indexOf('https://') !== -1 || link.toString().indexOf('http://') !== -1) {
-
-        labelLink.innerHTML = 'Link: <strong style="color: red; font-weight: 500;">Url invalid</strong>'
-        link.style.border = '2px solid red'
-
-        error++
     } else {
 
         labelLink.innerHTML = 'Link: '
         link.style.border = 'none'
-
-        error = 0
     }
 
     if (text.value == '') {
@@ -41,8 +33,6 @@ function addLink() {
 
         labelText.innerHTML = 'Text: '
         text.style.border = 'none'
-
-        error = 0
     }
 
     //add link in editor

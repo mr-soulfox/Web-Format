@@ -134,7 +134,7 @@ body {
 .options {
   position: absolute;
   margin-top: 10px;
-  left: 12%;
+  right: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,7 +303,17 @@ body {
   padding: 6px;
   border-radius: 5px;
   color: white;
+  background-color: #17c517;
   border: none;
+}
+
+.buttons button:last-child:hover {
+  background-color: #1adc1a;
+}
+
+.buttons button:last-child:focus {
+  outline: none;
+  background-color: #129712;
 }
 
 .footer {
@@ -332,5 +342,9 @@ body {
   font-weight: 700;
   color: #f2f2f2;
   text-decoration: none;
+}
+
+.footer > small > a:hover {
+  color: #d9d9d9;
 }
 /*# sourceMappingURL=main.css.map */

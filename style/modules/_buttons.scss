@@ -31,6 +31,16 @@
         padding: 6px;
         border-radius: 5px;
         color: white;
+        background-color: rgb(23, 197, 23);
         border: none;
+    }
+    
+    &:last-child:hover {
+        background-color: lighten($color: rgb(23, 197, 23), $amount: 5);
+    }
+
+    &:last-child:focus {
+        outline: none;
+        background-color: darken($color: rgb(23, 197, 23), $amount: 10);
     }
 }
