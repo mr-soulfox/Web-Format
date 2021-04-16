@@ -1,5 +1,5 @@
 <h1 align="center">
-    <a href="https://mr-soulfox.github.io/Web-Format/" style="color: white;">WEB FORMAT</a>
+    <a href="https://mr-soulfox.github.io/Web-Format/" target="_blank">WEB FORMAT</a>
 </h1>
 
 <img src="./md/image.png" title="#PersonalProject" alt="Screenshot" align="center"/>
@@ -34,7 +34,7 @@
 
 ## 🛠 Technologies:
 
-- [SASS](https://sass-lang.com/)
+- <a href="https://sass-lang.com/" target="_blank">SASS</a>
 
 <br/>
 
@@ -45,8 +45,6 @@
 
 ## Author
 <hr>
-<img src="./md/perfil.jpg"/ style="border-radius: 50%; width: 200px;"> 
-<br>
 
 #### Marcos Paulo 🦊
 ### Made with 💙 by Marcos Paulo.
