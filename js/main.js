@@ -70,7 +70,7 @@ function optionsClick(option) {
 
         mainAside.style.visibility = 'hidden'
 
-    }   
+    }
 
 }
 

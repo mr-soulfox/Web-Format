@@ -3,7 +3,7 @@ function save() {
     const preHtml = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>HTML To Doc</title></head><body>"
     const postHtml = "</body></html>"
 
-    const html = preHtml + document.getElementById('editor').innerHTML + postHtml
+    const html = preHtml + document.getElementById('editorBox').innerHTML + postHtml
 
     //url for download
     let url = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(html)

@@ -19,7 +19,7 @@
     <header class='header'>
 
         <h1>WEB FORMAT</h1>
-        <small>Recomended: open this site in chrome and use in PC</small>
+        <small>Recomended: open this site on chrome and use in computer</small>
 
     </header>
 
@@ -28,7 +28,16 @@
 
             <div class='textOptions'>
                 
-                <input type="number" name="fontSize" id="fontSize" value="16" onchange="fontModifie()"><label for="fontSize" style="color: #f2f2f2;">Px</label>
+                <input type="number" name="fontSize" id="fontSize" value="16" onchange="fontModifie('fontSize')"/>
+                <label for="fontSize" style="color: #f2f2f2;">Px</label>
+
+                <select name="font" id="fontFamily" class="font" onchange="fontModifie('fontFamily')">
+                    <option value="monospace" class="opt">Monospace</option>
+                    <option value="sans-serif" class="opt">Sans-serif</option>
+                    <option value="Times" class="opt">Times</option>
+                    <option value="Arial" class="opt">Arial</option>
+                    <option value="Roboto" class="opt" selected>Roboto</option>
+                </select>
 
             </div>
 
@@ -79,7 +88,7 @@
 
             </div>
 
-            <div class='editorBox'>
+            <div class='editorBox' id="editorBox">
                 <div contenteditable="true" class='editor' id="editor">
                     <!--Here have your text-->
                 </div>
