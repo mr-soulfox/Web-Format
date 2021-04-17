@@ -28,7 +28,6 @@
 - [x] Add link and images
 - [x] Modify font
 - [x] Save in .doc 
-- [ ] App for desktop
 
 <br/>
 
